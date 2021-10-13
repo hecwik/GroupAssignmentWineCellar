@@ -77,6 +77,7 @@ namespace GruppUppgiftMyCellar
         /// <returns>true - if insertion was possible, otherwise false</returns>
         private static bool InsertWine(Wine[] myCellar, Wine wine)
         {
+            // try/catch block for catching errors
             try
             {
                 for (int i = 0; i < myCellar.Length; i++)
