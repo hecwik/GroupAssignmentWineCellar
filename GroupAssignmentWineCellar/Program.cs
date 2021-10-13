@@ -59,10 +59,11 @@ namespace GruppUppgiftMyCellar
             Wine wine5 = new Wine { Year = 1992, Name = "Screaming Eagle", Grape = GrapeVariants.CabernetSauvignon, Region = GrapeRegions.RiberaDelDuero };
             bOK = InsertWine(myCellar, wine5);
 
+            // invoke custom methods
             PrintWines(myCellar);
 
             SearchWine(myCellar);
-            // insert a line break using writeline
+
             DeleteWine(myCellar);
             // initiates a string variable that stores input from user 
 
@@ -161,6 +162,7 @@ namespace GruppUppgiftMyCellar
             Console.WriteLine("\nSearch for a wine name: ");
             // initiates a string variable that store input from user
             string inputSearch = Console.ReadLine();
+
             try
             {
                 // as long as i is smaller than myCellar...
